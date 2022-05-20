@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misty's Water Gun Dont Load Spot </title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url(http://pa1.narvii.com/5740/78bb4bae24938468a6a0b6cbdb7224beae3b7b95_00.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> 
+
+   <!-- Pokemon Name & Picture Section -->
+    <h1 background-color="blue"> <%= data.name %> </h1>
+    <% let code = '.jpg' %>
+    <img src="<%= data.img %>" alt="photo-here">
+
+    <!-- POKEMON STATS SECTION -->
+    <h3>------Pokemon Full Stats------</h3>
+    <h3>Type of Pokemon: <%= data.type %> </h3>
+    <h3>Health Points: <%= data.stats.hp %></h3>
+    <h3>Attack: <%= data.stats.attack %></h3>
+    <h3>Defense: <%= data.stats.defense %></h3>
+    <h3>Speed: <%= data.stats.speed %></h3>
+    <h3>SA: <%= data.stats.spattack %></h3>
+    <h3>SD: <%= data.stats.spdefense %></h3>
+   
+    <a href="/pokemon">Back to Directory</a>
+</body>
+</html>

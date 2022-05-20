@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brock's Geodudes Bm's Port</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url(http://pa1.narvii.com/5740/78bb4bae24938468a6a0b6cbdb7224beae3b7b95_00.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> 
+
+    <h2>"I'm Different, Tru" - 2 Chainz</h2>
+	    <form action="/pokemon/<%=index%>?_method=PUT" method="POST">
+			Name: <input type="text" name="name" value="<%=pokemon.name %>" /><br />
+			Type: <input type="text" name="type" value="<%=pokemon.type %>" /><br />
+			Health Points: <input type="text" name="stats" value="<%=pokemon.stats.hp %>" /><br />
+			Attack: <input type="text" name="stats" value="<%=pokemon.stats.attack %>" /><br />
+			Defense: <input type="text" name="stats" value="<%=pokemon.stats.defense %>" /><br />
+            Speed: <input type="text" name="stats" value="<%=pokemon.stats.speed %>" /><br />
+			SA: <input type="text" name="stats" value="<%=pokemon.stats.spattack %>" /><br />
+			SD: <input type="text" name="stats" value="<%=pokemon.stats.spdefense %>" /><br />
+			<br />
+			<input type="submit" name="" value="Change Me" />
+		</form>
+</body>
+</html>
