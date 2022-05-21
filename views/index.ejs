@@ -16,24 +16,24 @@
         }
     </style>   
     
-<h1>WELCOME TO YOUR POKEMON DIRECTORY</h1>
+<h1> 👻 WELCOME TO YOUR POKEMON DIRECTORY 👻</h1>
 
 <!-- To Add New Pokemon Click -->
     <nav>
-        <a href="/pokemon/new">INCUBATE A POKEMON</a>
+        <a href="/pokemon/new">&#9758; INCUBATE A POKEMON</a>
     </nav>
 
 <!-- List of All Pokemon -->
 <!-- Create Unordered List and List Item (Pokemon Name, Image, Delete "Click" & Change "Click") -->
     <ul>
         <% for (let i = 0; i <pokemon.length; i++) { %>
-        <li>
-            <a href="/pokemon/<%= i %>"> <%= pokemon[i].name %> </a>
+        <!-- <li> -->
+            <a href="/pokemon/<%= i %>">&#127752; <%= pokemon[i].name %> &#127752; </a>
             <img src="<%= pokemon[i].img %>"/>
             <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST">
-                <input type="submit" value="KILL"/>
+                <input type="submit"  value ="&#9876; KILL &#9876;"/>
             </form>
-            <a href="/pokemon/<%=i; %>/edit">CHANGE</a>
+            <a href="/pokemon/<%=i; %>/edit">&#127920; CHANGE &#127920;</a>
         </li> <% } %>
     </ul>
 
